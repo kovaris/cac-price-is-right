@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    border: 1px solid red;
+}
+
+/* fonts */
+
+#item1-round, #item2-round, #item3-round, #item4-round, #item5-round, #item6-round, #item7-round, #item8-round, #item9-round, #item10-round, #item11-round, #item12-round {
+    font-family: "Rock Salt", cursive;
+    font-weight: bolder;
+}
+
+/* all item info */
+
+#item1-info, #item2-info, #item3-info, #item4-info, #item5-info, #item6-info, #item7-info, #item8-info, #item9-info, #item10-info, #item11-info, #item12-info {
+    font-family: "Special Elite", system-ui;
+    font-size: 0.5rem;
+    color: antiquewhite;
+    padding: 10px 30px;
+}
+
+/* all item answers */
+
+#item1-answer, #item2-answer, #item3-answer, #item4-answer, #item5-answer, #item6-answer, #item7-answer, #item8-answer, #item9-answer, #item10-answer, #item11-answer, #item12-answer {
+    font-family: "Special Elite", system-ui;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    padding: 20px 0 0 0;
+}
+
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* colors */
+
+body {
+    background-color: black;
+}
+
+#item1-info, #item1-answer, #item2-info, #item2-answer, #item3-info, #item3-answer, #item4-info, #item4-answer, #item5-info, #item5-answer, #item6-info, #item6-answer, #item7-info, #item7-answer, #item8-info, #item8-answer, #item9-info, #item9-answer, #item10-info, #item10-answer, #item11-info, #item11-answer, #item12-info, #item12-answer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#item1-round, #item2-round, #item3-round, #item4-round, #item5-round, #item6-round, #item7-round, #item8-round, #item9-round, #item10-round, #item11-round, #item12-round {
+    color: orangered;
+} 
+
+/* header */
+
+#header-container {
+    background-color: black;
+}
+
+#header-title {
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* item container */
+
+#item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img container:  this will house the main visible portion of the game */
+
+#start-img-container, #player-img-container, #names-img-container, #rules-img-container, #item1-img-container, #item2-img-container, #item3-img-container, #item4-img-container, #item5-img-container, #item6-img-container, #item7-img-container, #item8-img-container, #item9-img-container, #item10-img-container, #item11-img-container, #item12-img-container {
+    width: 768px;
+    height: 512px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* start page */
+
+#start-title {
+    position: relative;
+    top: -7em;
+    border-radius: 50%;
+    width: 1.8em;
+    margin: 0 auto;
+    padding: 9px;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+}
+
+#start-title:hover {
+    cursor: pointer;
+    color: antiquewhite;
+    border: 2px solid greenyellow;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#start-title:active {
+    color: greenyellow;
+    box-shadow: 0px 0px 10px 5px greenyellow;
+}
+
+/* choose # of players page */
+
+#player-title {
+    position: relative;
+    top: -9.8em;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#player-numbers {
+    position: relative;
+    font-size: 110px;
+    font-family: "Rock Salt", system-ui;
+    font-weight: bolder;
+    color: orangered;
+    width: 3.26em;
+    height: 1.8em;
+    bottom: 3.83em;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+#player-numbers:hover {
+    box-shadow: 0px 0px 10px 8px orangered;
+}
+
+#player-next-button {
+    position: relative;
+    bottom: 7.35em;
+    color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    width: 2em;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#player-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#player-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+/* choose players names */
+
+#names-title {
+    position: relative;
+    top: -3.9em;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#names-next-button {
+    position: relative;
+    bottom: 3.35em;
+    color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    width: 2em;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#names-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#names-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+/* rules page */
+
+#rules-title {
+    position: relative;
+    bottom: 10.3em;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+li {
+    font-family: "Special Elite", system-ui;
+    font-size: 0.50rem;
+    margin: 10px 0;
+}
+
+#rules-info {
+    position: relative;
+    color: antiquewhite;
+    bottom: 10em;
+    padding: 5px 15px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#rules-next-button {
+    position: relative;
+    bottom: 10em;
+    color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    width: 2em;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#rules-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#rules-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+/* item #1 */
+
+#item1-round {
+    position: relative;
+    bottom: 9em;
+    right: 4.5em;
+}
+
+#item1-info {
+    position: relative;
+    padding: 10px 20px;
+    bottom: 11em;
+}
+
+#item1-answer {
+    position: relative;
+    padding: 20px 0 10px 0;
+    bottom: 5em;
+}
+
+/* item #2 */
+
+#item2-round {
+    position: relative;
+    bottom: 10em;
+    right: 0.8em;
+}
+
+#item2-info {
+    position: relative;
+    padding: 10px 20px;
+    bottom: 11em;
+}
+
+#item2-answer {
+    position: relative;
+    padding: 22px 0 8px 0;
+    bottom: 5em;
+}
+
+/* item #3 */
+
+#item3-round {
+    position: relative;
+    left: 4.6em;
+    bottom: 9.8em;
+}
+
+#item3-info {
+    position: relative;
+    padding: 10px 30px;
+    bottom: 11em;
+}
+
+#item3-answer {
+    position: relative;
+    bottom: 4em;
+    padding: 20px 0 0 0;
+}
+
+/* item #4 */
+
+#item4-round {
+    position: relative;
+    bottom: 8.5em;
+    right: 4.2em;
+}
+
+#item4-info {
+    position: relative;
+    bottom: 14em;
+}
+
+#item4-answer {
+    position: relative;
+    bottom: 4.5em;
+}
+
+/* item #5 */
+
+#item5-round {
+    position: relative;
+    bottom: 10.5em;
+    right: 4.5em;
+}
+
+#item5-info {
+    position: relative;
+    bottom: 11.5em;
+}
+
+#item5-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+/* item #6 */
+
+#item6-round {
+    position: relative;
+    bottom: 10em;
+}
+
+#item6-info {
+    position: relative;
+    bottom: 13em;
+}
+
+#item6-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+/* item #7 */
+
+#item7-round {
+    position: relative;
+    bottom: 9.2em;
+    right: 4.2em;
+}
+
+#item7-info {
+    position: relative;
+    bottom: 12em;
+}
+
+#item7-answer {
+    position: relative;
+    bottom: 4.5em;
+}
+
+/* item #8 */
+
+#item8-round {
+    position: relative;
+    bottom: 10em;
+    right: 2em;
+}
+
+#item8-info {
+    position: relative;
+    bottom: 14em;
+}
+
+#item8-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+/* item #9 */
+
+#item9-round {
+    position: relative;
+    bottom: 9em;
+    right: 2.7em;
+}
+
+#item9-info {
+    position: relative;
+    bottom: 12em;
+}
+
+#item9-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+/* item #10 */
+
+#item10-round {
+    position: relative;
+    bottom: 10.5em;
+    right: 1.8em;
+}
+
+#item10-info {
+    position: relative;
+    bottom: 12em;
+}
+
+#item10-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+/* item #11 */
+
+#item11-round {
+    position: relative;
+    bottom: 10em;
+    right: 4.3em;
+}
+
+#item11-info {
+    position: relative;
+    bottom: 12em;
+}
+
+#item11-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+/* item #12 */
+
+#item12-round {
+    position: relative;
+    bottom: 6.6em;
+    right: 4.6em;
+}
+
+#item12-info {
+    position: relative;
+    bottom: 12em;
+}
+
+#item12-answer {
+    position: relative;
+    bottom: 4em;
+}
+
+
+
+
+/* Players Inputs */
+
+#player-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#player1, #player2, #player3, #player4 {
+    display: flex;
+    flex-direction: column;
+    width: 4em;
+}
+
+#player1-name, #player2-name, #player3-name, #player4-name {
+    color: antiquewhite;
+}
+
+/* Special classes for DOM manipulation */
+
+.hide-element {
+    display: none !important;
+}
+
+.make-invisible {
+    visibility: hidden;
+}
