@@ -284,11 +284,11 @@ li {
 #item1-answer {
     position: relative;
     padding: 20px 0 10px 0;
-    bottom: 6.5em;
+    bottom: 5.5em;
 }
 
 #item1-next-round {
-    bottom: 9.5em;
+    bottom: 7.5em;
 }
 
 #item1-next-round:hover {
@@ -547,4 +547,16 @@ li {
 
 .make-invisible {
     visibility: hidden;
+}
+
+.winning-guess {
+    background-color: rgba(173, 255, 47, 0.7);
+}
+
+.losing-guess {
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.overage-guess {
+    background-color: rgba(255, 69, 0, 0.7);
 }

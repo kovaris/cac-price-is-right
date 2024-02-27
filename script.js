@@ -307,6 +307,7 @@ let lockInCounter = 0;
 let player1LockButton = document.getElementById("player1-lock");
 let player1GuessLock = document.getElementById("player1-lockedin");
 let player1Proximity = [];
+let player1Wins = 0;
 
 player1LockButton.addEventListener("click", () => {
 
@@ -316,8 +317,13 @@ player1LockButton.addEventListener("click", () => {
     document.getElementById("player1-input").classList.add("hide-element");
     document.getElementById("player1-lock").classList.add("hide-element");
     player1GuessLock.innerHTML = player1Guess;
-    player1Proximity.push(player1GuessProximity);
     lockInCounter++;
+
+    if (player1GuessProximity < 0) {
+        player1Proximity.push(999999999);
+    } else {
+        player1Proximity.push(player1GuessProximity);
+    };
     
     if (lockInCounter == numberOfPlayers[0]) {
         document.getElementById("item1-next-button").classList.remove("make-invisible");
@@ -333,6 +339,7 @@ player1LockButton.addEventListener("click", () => {
 let player2LockButton = document.getElementById("player2-lock");
 let player2GuessLock = document.getElementById("player2-lockedin");
 let player2Proximity = [];
+let player2Wins = 0;
 
 player2LockButton.addEventListener("click", () => {
 
@@ -342,8 +349,13 @@ player2LockButton.addEventListener("click", () => {
     document.getElementById("player2-input").classList.add("hide-element");
     document.getElementById("player2-lock").classList.add("hide-element");
     player2GuessLock.innerHTML = player2Guess;
-    player2Proximity.push(player2GuessProximity);
     lockInCounter++;
+
+    if (player2GuessProximity < 0) {
+        player2Proximity.push(999999999);
+    } else {
+        player2Proximity.push(player2GuessProximity);
+    };
     
     if (lockInCounter == numberOfPlayers[0]) {
         document.getElementById("item1-next-button").classList.remove("make-invisible");
@@ -365,6 +377,7 @@ player2LockButton.addEventListener("click", () => {
 let player3LockButton = document.getElementById("player3-lock");
 let player3GuessLock = document.getElementById("player3-lockedin");
 let player3Proximity = [];
+let player3Wins = 0;
 
 player3LockButton.addEventListener("click", () => {
 
@@ -374,8 +387,13 @@ player3LockButton.addEventListener("click", () => {
     document.getElementById("player3-input").classList.add("hide-element");
     document.getElementById("player3-lock").classList.add("hide-element");
     player3GuessLock.innerHTML = player3Guess;
-    player3Proximity.push(player3GuessProximity);
     lockInCounter++;
+
+    if (player3GuessProximity < 0) {
+        player3Proximity.push(999999999);
+    } else {
+        player3Proximity.push(player3GuessProximity);
+    };
     
     if (lockInCounter == numberOfPlayers[0]) {
         document.getElementById("item1-next-button").classList.remove("make-invisible");
@@ -398,6 +416,7 @@ player3LockButton.addEventListener("click", () => {
 let player4LockButton = document.getElementById("player4-lock");
 let player4GuessLock = document.getElementById("player4-lockedin");
 let player4Proximity = [];
+let player4Wins = 0;
 
 player4LockButton.addEventListener("click", () => {
 
@@ -407,8 +426,13 @@ player4LockButton.addEventListener("click", () => {
     document.getElementById("player4-input").classList.add("hide-element");
     document.getElementById("player4-lock").classList.add("hide-element");
     player4GuessLock.innerHTML = player4Guess;
-    player4Proximity.push(player4GuessProximity);
     lockInCounter++;
+
+    if (player4GuessProximity < 0) {
+        player4Proximity.push(999999999);
+    } else {
+        player4Proximity.push(player4GuessProximity);
+    };
     
     if (lockInCounter == numberOfPlayers[0]) {
         document.getElementById("item1-next-button").classList.remove("make-invisible");
@@ -427,21 +451,81 @@ document.getElementById("item1-next-button").addEventListener("click", () => {
     document.getElementById("item1-next-button").addEventListener("animationend", () => {
         document.getElementById("item1-next-button").classList.add("make-invisible");
         document.getElementById("item1-info").classList.remove("animate__animated", "animate__fadeInUp", "animate__slower");
-        document.getElementById("item1-info").classList.add("animate__animated", "animate__zoomOut");
-        document.getElementById("item1-info").addEventListener("animationend", () => {
-            document.getElementById("player1-input").classList.remove("animate__animated", "animate__slideInUp");
-            document.getElementById("player1-input").classList.add("hide-element");
-            document.getElementById("player1-lock").classList.remove("animate__animated", "animate__slideInUp");
-            document.getElementById("player1-lock").classList.add("hide-element");
-            document.getElementById("item1-answer").classList.remove("make-invisible");
-            document.getElementById("item1-answer").classList.add("animate__animated", "animate__slideInUp");
-            document.getElementById("item1-answer").addEventListener("animationend", () => {
-                document.getElementById("item1-next-round").classList.remove("make-invisible");
-                document.getElementById("item1-next-round").classList.add("animate__animated", "animate__slideInUp");
+        document.getElementById("item1-info").classList.add("hide-element");
+        document.getElementById("item1-answer").classList.remove("make-invisible");
+        document.getElementById("item1-answer").classList.add("animate__animated", "animate__slideInUp");
+        document.getElementById("item1-answer").addEventListener("animationend", () => {
+            document.getElementById("item1-next-round").classList.remove("make-invisible");
+            document.getElementById("item1-next-round").classList.add("animate__animated", "animate__slideInUp");
 
+                // player1 check guess
+                if (player1GuessLock.innerHTML > answers[0]) {
+                    player1GuessLock.classList.add("overage-guess");
+                } else if (player1GuessLock.innerHTML == answers[0]) {
+                    player1Wins++;
+                    player1GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 2 && player1Proximity[0] < player2Proximity[0]) {
+                    player1Wins++;
+                    player1GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 3 && player1Proximity[0] < player2Proximity[0] && player1Proximity[0] < player3Proximity[0]) {
+                    player1Wins++;
+                    player1GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 4 && player1Proximity[0] < player2Proximity[0] && player1Proximity[0] < player3Proximity[0] && player1Proximity[0] < player4Proximity[0]) {
+                    player1Wins++;
+                    player1GuessLock.classList.add("winning-guess");
+                } else {
+                    player1GuessLock.classList.add("losing-guess");
+                };
+
+                // player2 check guess
+                if (player2GuessLock.innerHTML > answers[0]) {
+                    player2GuessLock.classList.add("overage-guess");
+                } else if (player2GuessLock.innerHTML == answers[0]) {
+                    player2Wins++;
+                    player2GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 2 && player2Proximity[0] < player1Proximity[0]) {
+                    player2Wins++;
+                    player2GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 3 && player2Proximity[0] < player1Proximity[0] && player2Proximity[0] < player3Proximity[0]) {
+                    player2Wins++;
+                    player2GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 4 && player2Proximity[0] < player1Proximity[0] && player2Proximity[0] < player3Proximity[0] && player2Proximity[0] < player4Proximity[0]) {
+                    player2Wins++;
+                    player2GuessLock.classList.add("winning-guess");
+                } else {
+                    player2GuessLock.classList.add("losing-guess");
+                };
+
+                // player3 check guess
+                if (player3GuessLock.innerHTML > answers[0]) {
+                    player3GuessLock.classList.add("overage-guess");
+                } else if (player3GuessLock.innerHTML == answers[0]) {
+                    player3Wins++;
+                    player3GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 3 && player3Proximity[0] < player1Proximity[0] && player3Proximity[0] < player2Proximity[0]) {
+                    player3Wins++;
+                    player3GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 4 && player3Proximity[0] < player1Proximity[0] && player3Proximity[0] < player3Proximity[0] && player3Proximity[0] < player4Proximity[0]) {
+                    player3Wins++;
+                    player3GuessLock.classList.add("winning-guess");
+                } else {
+                    player3GuessLock.classList.add("losing-guess");
+                };
+
+                // player4 check guess
+                if (player4GuessLock.innerHTML > answers[0]) {
+                    player4GuessLock.classList.add("overage-guess");
+                } else if (player4GuessLock.innerHTML == answers[0]) {
+                    player4Wins++;
+                    player4GuessLock.classList.add("winning-guess");
+                } else if (numberOfPlayers[0] == 4 && player4Proximity[0] < player1Proximity[0] && player4Proximity[0] < player2Proximity[0] && player4Proximity[0] < player3Proximity[0]) {
+                    player4Wins++;
+                    player4GuessLock.classList.add("winning-guess");
+                } else {
+                    player4GuessLock.classList.add("losing-guess");
+                };
                 
             })
 
         })
-    })
-});
+    });
