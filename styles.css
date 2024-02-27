@@ -231,6 +231,28 @@ li {
     color: greenyellow;
 }
 
+/* item next buttons */
+
+#item1-next-button, #item2-next-button, #item3-next-button, #item4-next-button, #item5-next-button, #item6-next-button, #item7-next-button, #item8-next-button, #item9-next-button, #item10-next-button, #item11-next-button, #item12-next-button {
+    position: relative;
+    color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    width: 4em;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+#item1-next-round, #item2-next-round, #item3-next-round, #item4-next-round, #item5-next-round, #item6-next-round, #item7-next-round, #item8-next-round, #item9-next-round, #item10-next-round, #item11-next-round, #item12-next-round {
+    position: relative;
+    color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    width: 4em;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
 /* item #1 */
 
 #item1-round {
@@ -242,13 +264,41 @@ li {
 #item1-info {
     position: relative;
     padding: 10px 20px;
-    bottom: 11em;
+    bottom: 11.5em;
+}
+
+#item1-next-button {
+    bottom: 5.5em;
+}
+
+#item1-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item1-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
 }
 
 #item1-answer {
     position: relative;
     padding: 20px 0 10px 0;
-    bottom: 5em;
+    bottom: 6.5em;
+}
+
+#item1-next-round {
+    bottom: 9.5em;
+}
+
+#item1-next-round:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item1-next-round:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
 }
 
 /* item #2 */
@@ -470,6 +520,22 @@ li {
 }
 
 #player1-name, #player2-name, #player3-name, #player4-name {
+    color: antiquewhite;
+}
+
+#player1-lockedin {
+    color: antiquewhite;
+}
+
+#player2-lockedin {
+    color: antiquewhite;
+}
+
+#player3-lockedin {
+    color: antiquewhite;
+}
+
+#player4-lockedin {
     color: antiquewhite;
 }
 
