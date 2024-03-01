@@ -7,7 +7,6 @@
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
-    border: 1px solid red;
 }
 
 /* fonts */
@@ -198,13 +197,13 @@ body {
 li {
     font-family: "Special Elite", system-ui;
     font-size: 0.50rem;
-    margin: 10px 0;
+    margin: 14px 0;
 }
 
 #rules-info {
     position: relative;
     color: antiquewhite;
-    bottom: 10em;
+    bottom: 10.1em;
     padding: 5px 15px;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.7);
@@ -212,7 +211,7 @@ li {
 
 #rules-next-button {
     position: relative;
-    bottom: 10em;
+    bottom: 10.2em;
     color: antiquewhite;
     border-radius: 15px;
     border: 1px solid orangered;
@@ -379,7 +378,7 @@ li {
 
 #item3-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 5.2em;
     padding: 20px 0 0 0;
 }
 
@@ -401,17 +400,17 @@ li {
 
 #item4-round {
     position: relative;
-    bottom: 8.5em;
-    right: 4.2em;
+    bottom: 9.5em;
+    right: 4.6em;
 }
 
 #item4-info {
     position: relative;
-    bottom: 14em;
+    bottom: 15em;
 }
 
 #item4-next-button {
-    bottom: 5.5em;
+    bottom: 7.5em;
 }
 
 #item4-next-button:hover {
@@ -426,7 +425,7 @@ li {
 
 #item4-answer {
     position: relative;
-    bottom: 4.5em;
+    bottom: 5.5em;
 }
 
 #item4-next-round {
@@ -453,11 +452,11 @@ li {
 
 #item5-info {
     position: relative;
-    bottom: 11.5em;
+    bottom: 14.5em;
 }
 
 #item5-next-button {
-    bottom: 5.5em;
+    bottom: 6.9em;
 }
 
 #item5-next-button:hover {
@@ -472,7 +471,7 @@ li {
 
 #item5-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 5.7em;
 }
 
 #item5-next-round {
@@ -493,16 +492,16 @@ li {
 
 #item6-round {
     position: relative;
-    bottom: 10em;
+    bottom: 11em;
 }
 
 #item6-info {
     position: relative;
-    bottom: 13em;
+    bottom: 14.5em;
 }
 
 #item6-next-button {
-    bottom: 5.5em;
+    bottom: 6.8em;
 }
 
 #item6-next-button:hover {
@@ -517,11 +516,11 @@ li {
 
 #item6-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 4.8em;
 }
 
 #item6-next-round {
-    bottom: 7.5em;
+    bottom: 7.2em;
 }
 
 #item6-next-round:hover {
@@ -544,11 +543,11 @@ li {
 
 #item7-info {
     position: relative;
-    bottom: 12em;
+    bottom: 15em;
 }
 
 #item7-next-button {
-    bottom: 5.5em;
+    bottom: 6.8em;
 }
 
 #item7-next-button:hover {
@@ -563,7 +562,7 @@ li {
 
 #item7-answer {
     position: relative;
-    bottom: 4.5em;
+    bottom: 5.8em;
 }
 
 #item7-next-round {
@@ -590,11 +589,11 @@ li {
 
 #item8-info {
     position: relative;
-    bottom: 14em;
+    bottom: 17em;
 }
 
 #item8-next-button {
-    bottom: 5.5em;
+    bottom: 8.3em;
 }
 
 #item8-next-button:hover {
@@ -609,7 +608,7 @@ li {
 
 #item8-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 6em;
 }
 
 #item8-next-round {
@@ -631,16 +630,16 @@ li {
 #item9-round {
     position: relative;
     bottom: 9em;
-    right: 2.7em;
+    right: 3.5em;
 }
 
 #item9-info {
     position: relative;
-    bottom: 12em;
+    bottom: 14em;
 }
 
 #item9-next-button {
-    bottom: 5.5em;
+    bottom: 6.6em;
 }
 
 #item9-next-button:hover {
@@ -655,7 +654,7 @@ li {
 
 #item9-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 6em;
 }
 
 #item9-next-round {
@@ -682,11 +681,11 @@ li {
 
 #item10-info {
     position: relative;
-    bottom: 12em;
+    bottom: 14.8em;
 }
 
 #item10-next-button {
-    bottom: 5.5em;
+    bottom: 7.15em;
 }
 
 #item10-next-button:hover {
@@ -701,7 +700,7 @@ li {
 
 #item10-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 5.8em;
 }
 
 #item10-next-round {
@@ -728,11 +727,11 @@ li {
 
 #item11-info {
     position: relative;
-    bottom: 12em;
+    bottom: 13em;
 }
 
 #item11-next-button {
-    bottom: 5.5em;
+    bottom: 6.2em;
 }
 
 #item11-next-button:hover {
@@ -747,7 +746,7 @@ li {
 
 #item11-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 5.3em;
 }
 
 #item11-next-round {
@@ -774,11 +773,11 @@ li {
 
 #item12-info {
     position: relative;
-    bottom: 12em;
+    bottom: 13.2em;
 }
 
 #item12-next-button {
-    bottom: 5.5em;
+    bottom: 6.5em;
 }
 
 #item12-next-button:hover {
@@ -793,7 +792,7 @@ li {
 
 #item12-answer {
     position: relative;
-    bottom: 4em;
+    bottom: 5.3em;
 }
 
 #item12-next-round {
@@ -826,24 +825,102 @@ li {
     width: 4em;
 }
 
+#player1-name-input, #player2-name-input, #player3-name-input, #player4-name-input {
+    border-radius: 10px;
+}
+
+#player1-name-lock, #player2-name-lock, #player3-name-lock, #player4-name-lock {
+    border-radius: 10px;
+}
+
+#player1-name-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player1-name-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player2-name-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player2-name-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player3-name-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player3-name-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player4-name-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player4-name-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
 #player1-name, #player2-name, #player3-name, #player4-name {
     color: antiquewhite;
 }
 
-#player1-lockedin {
-    color: antiquewhite;
+#player1-input, #player2-input, #player3-input, #player4-input {
+    border-radius: 10px;
 }
 
-#player2-lockedin {
-    color: antiquewhite;
+#player1-lock, #player2-lock, #player3-lock, #player4-lock {
+    border-radius: 10px;
+    background-color: gainsboro;
 }
 
-#player3-lockedin {
-    color: antiquewhite;
+#player1-lock:hover {
+    background-color: antiquewhite;
 }
 
-#player4-lockedin {
+#player1-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player2-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player2-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player3-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player3-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player4-lock:hover {
+    background-color: antiquewhite;
+}
+
+#player4-lock:active {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px gold;
+}
+
+#player1-lockedin, #player2-lockedin, #player3-lockedin, #player4-lockedin {
     color: antiquewhite;
+    border-radius: 10px;
 }
 
 /* Special classes for DOM manipulation */
@@ -854,6 +931,10 @@ li {
 
 .make-invisible {
     visibility: hidden;
+}
+
+.locked-in {
+    border: 2px solid gold;
 }
 
 .winning-guess {
