@@ -923,6 +923,10 @@ li {
     border-radius: 10px;
 }
 
+#player1-wins, #player2-wins, #player3-wins, #player4-wins {
+    color: antiquewhite;
+}
+
 /* Special classes for DOM manipulation */
 
 .hide-element {

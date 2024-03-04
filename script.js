@@ -86,6 +86,39 @@ player2.classList.add("hide-element");
 player3.classList.add("hide-element");
 player4.classList.add("hide-element");
 
+function showWins() {
+    document.getElementById("player1-wins").innerHTML = player1Wins;
+    document.getElementById("player1-wins").classList.remove("hide-element");
+    document.getElementById("player1-wins").classList.add("animate__animated", "animate__fadeInUp");
+
+    document.getElementById("player2-wins").innerHTML = player2Wins;
+    document.getElementById("player2-wins").classList.remove("hide-element");
+    document.getElementById("player2-wins").classList.add("animate__animated", "animate__fadeInUp");
+
+    document.getElementById("player3-wins").innerHTML = player3Wins;
+    document.getElementById("player3-wins").classList.remove("hide-element");
+    document.getElementById("player3-wins").classList.add("animate__animated", "animate__fadeInUp");
+
+    document.getElementById("player4-wins").innerHTML = player4Wins;
+    document.getElementById("player4-wins").classList.remove("hide-element");
+    document.getElementById("player4-wins").classList.add("animate__animated", "animate__fadeInUp");    
+};
+
+function hideWins() {
+    document.getElementById("player1-wins").classList.add("hide-element");
+    document.getElementById("player1-wins").classList.remove("animate__animated", "animate__fadeInUp");
+
+    document.getElementById("player2-wins").classList.add("hide-element");
+    document.getElementById("player2-wins").classList.remove("animate__animated", "animate__fadeInUp");
+
+    document.getElementById("player3-wins").classList.add("hide-element");
+    document.getElementById("player3-wins").classList.add("animate__animated", "animate__fadeInUp");
+
+    document.getElementById("player4-wins").classList.add("hide-element");
+    document.getElementById("player4-wins").classList.add("animate__animated", "animate__fadeInUp");    
+};
+
+
 document.getElementById("start-title").addEventListener("click", () => {
     document.getElementById("start-title").classList.add("animate__animated", "animate__zoomOut");
     document.getElementById("start-title").addEventListener("animationend", () => {
@@ -580,6 +613,7 @@ document.getElementById("item1-next-button").addEventListener("click", () => {
             document.getElementById("item1-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     })
@@ -713,6 +747,7 @@ function hideLockedIn() {
 document.getElementById("item1-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -768,6 +803,7 @@ document.getElementById("item2-next-button").addEventListener("click", () => {
             document.getElementById("item2-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -777,6 +813,7 @@ document.getElementById("item2-next-button").addEventListener("click", () => {
 document.getElementById("item2-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -826,6 +863,7 @@ document.getElementById("item3-next-button").addEventListener("click", () => {
             document.getElementById("item3-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -835,6 +873,7 @@ document.getElementById("item3-next-button").addEventListener("click", () => {
 document.getElementById("item3-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins()
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -884,6 +923,7 @@ document.getElementById("item4-next-button").addEventListener("click", () => {
             document.getElementById("item4-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -893,6 +933,7 @@ document.getElementById("item4-next-button").addEventListener("click", () => {
 document.getElementById("item4-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -943,6 +984,7 @@ document.getElementById("item5-next-button").addEventListener("click", () => {
             document.getElementById("item5-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -952,6 +994,7 @@ document.getElementById("item5-next-button").addEventListener("click", () => {
 document.getElementById("item5-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1002,6 +1045,7 @@ document.getElementById("item6-next-button").addEventListener("click", () => {
             document.getElementById("item6-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -1011,6 +1055,7 @@ document.getElementById("item6-next-button").addEventListener("click", () => {
 document.getElementById("item6-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1060,6 +1105,7 @@ document.getElementById("item7-next-button").addEventListener("click", () => {
             document.getElementById("item7-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -1069,6 +1115,7 @@ document.getElementById("item7-next-button").addEventListener("click", () => {
 document.getElementById("item7-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1118,6 +1165,7 @@ document.getElementById("item8-next-button").addEventListener("click", () => {
             document.getElementById("item8-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -1127,6 +1175,7 @@ document.getElementById("item8-next-button").addEventListener("click", () => {
 document.getElementById("item8-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1177,6 +1226,7 @@ document.getElementById("item9-next-button").addEventListener("click", () => {
             document.getElementById("item9-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -1186,6 +1236,7 @@ document.getElementById("item9-next-button").addEventListener("click", () => {
 document.getElementById("item9-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1235,6 +1286,7 @@ document.getElementById("item10-next-button").addEventListener("click", () => {
             document.getElementById("item10-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -1244,6 +1296,7 @@ document.getElementById("item10-next-button").addEventListener("click", () => {
 document.getElementById("item10-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1293,6 +1346,7 @@ document.getElementById("item11-next-button").addEventListener("click", () => {
             document.getElementById("item11-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
@@ -1302,6 +1356,7 @@ document.getElementById("item11-next-button").addEventListener("click", () => {
 document.getElementById("item11-next-round").addEventListener("click", () => {
     roundCount++;
     hideNextButton();
+    hideWins();
     lockInCounter = 0;
     player1Proximity.length = 0;
     player2Proximity.length = 0;
@@ -1351,6 +1406,7 @@ document.getElementById("item12-next-button").addEventListener("click", () => {
             document.getElementById("item12-next-round").classList.add("animate__animated", "animate__slideInUp");
 
             checkGuesses();
+            showWins();
         })
 
     });
