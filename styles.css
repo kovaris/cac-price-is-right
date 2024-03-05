@@ -11,14 +11,14 @@
 
 /* fonts */
 
-#item1-round, #item2-round, #item3-round, #item4-round, #item5-round, #item6-round, #item7-round, #item8-round, #item9-round, #item10-round, #item11-round, #item12-round {
+#item1-round, #item2-round, #item3-round, #item4-round, #item5-round, #item6-round, #item7-round, #item8-round, #item9-round, #item10-round, #item11-round, #item12-round, #item13-round, #item14-round, #item15-round {
     font-family: "Rock Salt", cursive;
     font-weight: bolder;
 }
 
 /* all item info */
 
-#item1-info, #item2-info, #item3-info, #item4-info, #item5-info, #item6-info, #item7-info, #item8-info, #item9-info, #item10-info, #item11-info, #item12-info {
+#item1-info, #item2-info, #item3-info, #item4-info, #item5-info, #item6-info, #item7-info, #item8-info, #item9-info, #item10-info, #item11-info, #item12-info, #item13-info, #item14-info, #item15-info {
     font-family: "Special Elite", system-ui;
     font-size: 0.5rem;
     color: antiquewhite;
@@ -27,7 +27,7 @@
 
 /* all item answers */
 
-#item1-answer, #item2-answer, #item3-answer, #item4-answer, #item5-answer, #item6-answer, #item7-answer, #item8-answer, #item9-answer, #item10-answer, #item11-answer, #item12-answer {
+#item1-answer, #item2-answer, #item3-answer, #item4-answer, #item5-answer, #item6-answer, #item7-answer, #item8-answer, #item9-answer, #item10-answer, #item11-answer, #item12-answer, #item13-answer, #item14-answer, #item15-answer {
     font-family: "Special Elite", system-ui;
     font-size: 1.5rem;
     color: antiquewhite;
@@ -46,11 +46,11 @@ body {
     background-color: black;
 }
 
-#item1-info, #item1-answer, #item2-info, #item2-answer, #item3-info, #item3-answer, #item4-info, #item4-answer, #item5-info, #item5-answer, #item6-info, #item6-answer, #item7-info, #item7-answer, #item8-info, #item8-answer, #item9-info, #item9-answer, #item10-info, #item10-answer, #item11-info, #item11-answer, #item12-info, #item12-answer {
+#item1-info, #item1-answer, #item2-info, #item2-answer, #item3-info, #item3-answer, #item4-info, #item4-answer, #item5-info, #item5-answer, #item6-info, #item6-answer, #item7-info, #item7-answer, #item8-info, #item8-answer, #item9-info, #item9-answer, #item10-info, #item10-answer, #item11-info, #item11-answer, #item12-info, #item12-answer, #item13-info, #item13-answer, #item14-info, #item14-answer, #item15-info, #item15-answer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#item1-round, #item2-round, #item3-round, #item4-round, #item5-round, #item6-round, #item7-round, #item8-round, #item9-round, #item10-round, #item11-round, #item12-round {
+#item1-round, #item2-round, #item3-round, #item4-round, #item5-round, #item6-round, #item7-round, #item8-round, #item9-round, #item10-round, #item11-round, #item12-round, #item13-round, #item14-round, #item15-round {
     color: orangered;
 } 
 
@@ -76,7 +76,7 @@ body {
 
 /* img container:  this will house the main visible portion of the game */
 
-#start-img-container, #player-img-container, #names-img-container, #rules-img-container, #item1-img-container, #item2-img-container, #item3-img-container, #item4-img-container, #item5-img-container, #item6-img-container, #item7-img-container, #item8-img-container, #item9-img-container, #item10-img-container, #item11-img-container, #item12-img-container {
+#start-img-container, #player-img-container, #names-img-container, #rules-img-container, #item1-img-container, #item2-img-container, #item3-img-container, #item4-img-container, #item5-img-container, #item6-img-container, #item7-img-container, #item8-img-container, #item9-img-container, #item10-img-container, #item11-img-container, #item12-img-container, #item13-img-container, #item14-img-container, #item15-img-container {
     width: 768px;
     height: 512px;
     border-radius: 10px;
@@ -232,7 +232,7 @@ li {
 
 /* item next buttons */
 
-#item1-next-button, #item2-next-button, #item3-next-button, #item4-next-button, #item5-next-button, #item6-next-button, #item7-next-button, #item8-next-button, #item9-next-button, #item10-next-button, #item11-next-button, #item12-next-button {
+#item1-next-button, #item2-next-button, #item3-next-button, #item4-next-button, #item5-next-button, #item6-next-button, #item7-next-button, #item8-next-button, #item9-next-button, #item10-next-button, #item11-next-button, #item12-next-button, #item13-next-button, #item14-next-button, #item15-next-button {
     position: relative;
     color: antiquewhite;
     border-radius: 15px;
@@ -242,7 +242,7 @@ li {
     background-color: rgba(0, 0, 0, 0.7); 
 }
 
-#item1-next-round, #item2-next-round, #item3-next-round, #item4-next-round, #item5-next-round, #item6-next-round, #item7-next-round, #item8-next-round, #item9-next-round, #item10-next-round, #item11-next-round, #item12-next-round {
+#item1-next-round, #item2-next-round, #item3-next-round, #item4-next-round, #item5-next-round, #item6-next-round, #item7-next-round, #item8-next-round, #item9-next-round, #item10-next-round, #item11-next-round, #item12-next-round, #item13-next-round, #item14-next-round, #item15-next-round {
     position: relative;
     color: antiquewhite;
     border-radius: 15px;
@@ -805,6 +805,143 @@ li {
 }
 
 #item12-next-round:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+/* item #13 */
+
+#item13-round {
+    position: relative;
+    bottom: 10em;
+    right: 1em;
+}
+
+#item13-info {
+    position: relative;
+    bottom: 13.5em;
+}
+
+#item13-next-button {
+    bottom: 6.5em;
+}
+
+#item13-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item13-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+#item13-answer {
+    position: relative;
+    bottom: 5.3em;
+}
+
+#item13-next-round {
+    bottom: 7.5em;
+}
+
+#item13-next-round:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item13-next-round:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+/* item #14 */
+
+#item14-round {
+    position: relative;
+    bottom: 6.6em;
+    right: 4.6em;
+}
+
+#item14-info {
+    position: relative;
+    bottom: 13.2em;
+}
+
+#item14-next-button {
+    bottom: 6.5em;
+}
+
+#item14-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item14-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+#item14-answer {
+    position: relative;
+    bottom: 5.3em;
+}
+
+#item14-next-round {
+    bottom: 7.5em;
+}
+
+#item14-next-round:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item14-next-round:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+/* item #15 */
+
+#item15-round {
+    position: relative;
+    bottom: 10.5em;
+}
+
+#item15-info {
+    position: relative;
+    bottom: 13.2em;
+}
+
+#item15-next-button {
+    bottom: 6.5em;
+}
+
+#item15-next-button:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item15-next-button:active {
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    color: greenyellow;
+}
+
+#item15-answer {
+    position: relative;
+    bottom: 6em;
+}
+
+#item15-next-round {
+    bottom: 8.9em;
+}
+
+#item15-next-round:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+#item15-next-round:active {
     box-shadow: 0px 0px 10px 5px greenyellow;
     color: greenyellow;
 }
